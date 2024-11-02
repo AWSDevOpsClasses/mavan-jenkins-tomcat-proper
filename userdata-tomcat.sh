@@ -21,7 +21,7 @@ User=tomcat
 Group=tomcat
 RestartSec=10
 Restart=always 
-Environment="JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64"
+Environment="JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64/"
 Environment="JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom"
 
 Environment="CATALINA_BASE=/opt/tomcat"
@@ -39,5 +39,5 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl start tomcat
 sudo systemctl enable tomcat
-sudo cat << EOF > /opt/tomcat/conf/tomcat-users.xml
+
 
