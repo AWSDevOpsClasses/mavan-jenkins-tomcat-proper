@@ -39,3 +39,5 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl start tomcat
 sudo systemctl enable tomcat
+sudo cat << EOF > /opt/tomcat/conf/tomcat-users.xml
+
