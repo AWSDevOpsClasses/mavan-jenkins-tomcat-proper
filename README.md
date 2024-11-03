@@ -22,3 +22,5 @@ https://www.unix.com/shell-programming-and-scripting/159054-code-insert-user-int
 sed -i '/<\/tomcat-users>/ i\<role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status"/>' tomcat-users.xml
 
 sed -i '/<\/tomcat-users>/ i\<user username="admin" password="admin123" roles="admin-gui,manager-gui,manager-script"/>' tomcat-users.xml
+
+https://phoenixnap.com/kb/sed-delete-line
