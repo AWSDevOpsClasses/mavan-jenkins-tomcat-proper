@@ -44,3 +44,5 @@ sudo cat << EOF > /opt/tomcat/conf/tomcat-users.xml
 <role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status"/>
 <user username="admin" password="admin123" roles="admin-gui,manager-gui,manager-script"/>
 EOF
+sudo systemctl daemon-reload
+sudo systemctl restart tomcat
