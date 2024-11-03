@@ -42,7 +42,7 @@ sudo systemctl start tomcat
 sudo systemctl enable tomcat
 
 sudo sed -i '/<\/tomcat-users>/ i\<role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status"/>' /opt/tomcat/conf/tomcat-users.xml
-sed -i '/<\/tomcat-users>/ i\<user username="admin" password="admin123" roles="admin-gui,manager-gui,manager-script"/>' /opt/tomcat/conf/tomcat-users.xml
+sudo sed -i '/<\/tomcat-users>/ i\<user username="admin" password="admin123" roles="admin-gui,manager-gui,manager-script"/>' /opt/tomcat/conf/tomcat-users.xml
 
 sudo systemctl daemon-reload
 sudo systemctl restart tomcat
