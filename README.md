@@ -19,4 +19,5 @@ tomcat user.xml add using echo [ google search ]
 https://www.unix.com/shell-programming-and-scripting/159054-code-insert-user-into-tomcat-config-file.html
 
 sed -i '/<\/tomcat-users>/ i\<role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status"/>' tomcat-users.xml
+
 sed -i '/<\/tomcat-users>/ i\<user username="admin" password="admin123" roles="admin-gui,manager-gui,manager-script"/>' tomcat-users.xml
