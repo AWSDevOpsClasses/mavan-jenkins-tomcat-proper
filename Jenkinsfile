@@ -13,9 +13,10 @@ pipeline {
 
 
     stages {
-        stage('Clone the repository') {
+       stage('Clone the repository') {
             steps {
-               git credentialsId: 'Github_username_password', url: 'https://github.com/AWSDevOpsClasses/mavan-jenkins-tomcat-proper.git'
+            git branch: 'main',
+                url: 'https://github.com/AWSDevOpsClasses/mavan-jenkins-tomcat-proper.git'              
             }
         }
 
