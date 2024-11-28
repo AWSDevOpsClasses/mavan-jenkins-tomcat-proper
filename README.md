@@ -5,6 +5,7 @@ https://www.fosstechnix.com/deploy-war-file-in-tomcat-2-steps/
 https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host
 
 readlink -f $(which java)
+
 <role rolename="admin-gui,manager-gui,manager-script,manager-jmx,manager-status"/>
 <user username="admin" password="admin123" roles="admin-gui,manager-gui,manager-script"/>
 
