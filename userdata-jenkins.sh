@@ -1,7 +1,8 @@
 #!/bin/bash
 sudo apt-get update -y
 sudo apt install wget -y
-sudo apt install fontconfig openjdk-17-jre -y
+#sudo apt install fontconfig openjdk-17-jre -y
+sudo apt install openjdk-21-jdk -y
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian/jenkins.io-2023.key
 echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
