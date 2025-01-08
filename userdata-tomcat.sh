@@ -2,6 +2,8 @@
 sudo apt-get update -y
 sudo apt install wget -y
 #sudo apt install fontconfig openjdk-17-jre -y
+#sudo apt install openjdk-19-jdk-headless
+#sudo apt install openjdk-19-jre-headless
 #sudo apt install default-jdk -y
 sudo apt install openjdk-21-jdk -y
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.tar.gz
