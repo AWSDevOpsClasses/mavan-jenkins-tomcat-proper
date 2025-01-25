@@ -7,12 +7,14 @@ sudo apt install wget -y
 #sudo apt install default-jdk -y
 sudo apt install openjdk-21-jdk -y
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.tar.gz
+#sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.34/bin/apache-tomcat-10.1.34.tar.gz
 sudo mkdir -p /opt/tomcat
 sudo tar xzvf apache-tomcat-*tar.gz -C /opt/tomcat --strip-components=1
 sudo groupadd tomcat
 sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 sudo chown -R tomcat: /opt/tomcat
 sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'
+# readlink -f $(which java)
 sudo cat << EOF > /etc/systemd/system/tomcat.service
 [Unit]
 Description=Tomcat webs servlet container
